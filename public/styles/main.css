@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
+body {
+  position: relative;
+  font-family: sans-serif; 
+}
 
 .gallery {
   background: #EEE;
