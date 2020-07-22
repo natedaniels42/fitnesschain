@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formHead {
+  font-size: 36px;
+  margin: 185.5px 0px 46px 0px;
+}
+form {
+  width: 452px;
+}
+.firstName,
+.lastName {
+  display: inline-block;
+  margin-bottom: 27px;
+}
+.firstName {
+  margin-right: 24px;
+}
+.formLabel {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+}
+input {
+  height: 57px;
+  font-size: 24px;
+  font-weight: normal;
+}
+input::placeholder {
+  color: lightgray;
+}
+.firstName input,
+.lastName input {
+  width: 212px;
+}
+.email input {
+  width: 448px;
+}
+
+.button-box {
+  position: relative;  
+  height: 163px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 51px;
+}
+
+.button {
+    width: 293px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #5a5a66;
+    font-size: 24px;
+    line-height: 117%;
+    color: #ffffff;
+    margin: 0 98px;
+}
