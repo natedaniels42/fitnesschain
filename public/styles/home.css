@@ -1,3 +1,8 @@
+main {
+    margin-bottom: 196px;
+    width: 100%;
+}
+
 .text-box {
     position: absolute;
     width: 511px;
@@ -9,6 +14,7 @@
     left: 20px;
     flex-shrink: inherit;
 }
+
 
 .carousel-box {
     min-height: 355px;
@@ -99,14 +105,16 @@
   .box {
     max-width: 400px;
     margin: 34.5px 12px;
+    position: relative;
   }
 
-  .box img {
-      width: 100%;
+  .box img {  
+    width: 100%;
+      top: 0;
   }
 
   .why-join {
-      display: flex;
+        display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
@@ -116,7 +124,7 @@
 }
 
 .active-text {
-    margin: 0 24px;
+    margin: 28px 24px;
     /*max-width: 300px;*/
 }
 
