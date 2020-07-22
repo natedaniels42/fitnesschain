@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('./partials/_head', { title:'confirmation'}) %>
+<%- include('./partials/_head', { title:'confirmation', pageStyle: '/styles/dashboard.css'}) %>
 
     <body>
-        <% users.forEach(user => { %>
-            <p><%=user.firstName%> <%=user.lastName%></p>
-            <p><%=user.email%></p>
-            <p><%=user.createdAt.toLocaleDateString()%></p>            
-        <% }) %>
+        <main>
+            <h2>Business Dashboard</h2>
+            <table>
+                <tr class="tableHead">
+                    <th class="firstDash">First name</th>
+                    <th class="lastDash">Last name</th>
+                    <th class="emailDash">Email</th>
+                    <th class="sinceDash">Member since</th>
+                </tr>
+                <% users.forEach((user, index) => { %>
+                    <% if (index % 2 === 0) { %>
+                        <tr style='background: #C4C4C4;'>
+                    <% } else { %>
+                        <tr style='background: #E2E2E2'>
+                    <% } %>
+                        <td><%= user.firstName%></td>
+                        <td><%=user.lastName%></td>
+                        <td><%=user.email%></td>
+                        <td><%=user.createdAt.toLocaleDateString()%></td>            
+                    </tr>
+                    <% }) %>
+                </table>
+    </main>
     </body>
 </html>

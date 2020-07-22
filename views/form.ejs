@@ -3,22 +3,30 @@
 
   <%- include('./partials/_head', { title:'sign up', pageStyle: '/styles/home.css}) %>
 
+  <%- include('./partials/_head', { title:'sign up', pageStyle: '/styles/form.css'}) %>
+
 <body>
+  <main>
+  <h3 class="formHead">Create Your Account</h3>
   <form action="/confirmation" method="POST">
     <div class="firstName">
-      <label for="firstName">First Name: </label>
-      <input type="text" id="firstName" name="firstName" required>
+      <label for="firstName" class='formLabel'>First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
     </div>
     <div class="lastName">
-      <label for="lastName">Last Name: </label>
-      <input type="text" id="lastName" name="lastName" required>
+      <label for="lastName" class='formLabel'>Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
     </div>
     <div class="email">
-      <label for="email">Email: </label>
-      <input type="email" id="email" name="email">
+      <label for="email" class='formLabel'>Email</label>
+      <input type="email" id="email" name="email" placeholder="email@email.com">
     </div>
-    <button type="submit">Submit</button>
+    <div class="button-box">
+      <div class="button-area">
+        <button class="button" type="submit">Register</button>
+      </div>
+    </div>
   </form>
-  
+  </main>
 </body>
 </html>

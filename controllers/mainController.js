@@ -12,9 +12,16 @@ router.post('/confirmation', (req, res) => {
   db.User.create(req.body, (err, newUser) => {
     if (err) return console.log(err);
     console.log(newUser);
-    res.send('<h1>New User created!</h1>')
+    res.render('confirmation', {
+      user: newUser
+    });
   })
 })
+
+//to be deleted
+// router.get('/confirmation', (req, res) => {
+//   res.render('confirmation')
+// })
 
 router.get('/dashboard', (req, res) => {
     db.User.find({}, (err, allUsers) => {
