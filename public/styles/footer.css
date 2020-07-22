@@ -12,7 +12,7 @@ footer {
 .leftFooter {
   display: flex;
   align-items: center;
-  margin-left: 144px;
+  margin-left: 10%;
   height: 72px;
 }
 .leftFooter img {
@@ -27,9 +27,25 @@ footer {
   line-height: 15px;
 }
 .rightFooter {
-  margin-right: 142px;
+  margin-right: 10%;
 }
 .rightFooter img {
   height: 50px;
   margin-left: 22px
+}
+
+@media only screen and (max-width: 700px) {
+  .leftFooter {
+    margin-left: 5%;
+  }
+  .rightFooter {
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .leftFooter,
+  .rightFooter {
+    width: 100%;
+    margin: 0;
+  }
 }
