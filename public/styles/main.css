@@ -5,6 +5,11 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  position: relative;
+  font-family: sans-serif; 
+}
+
+.gallery {
+  background: #EEE;
 }
 
