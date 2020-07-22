@@ -1,0 +1,41 @@
+.carousel-inner {
+    height: 500px;
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .carousel-box {
+    position: relative;
+  }
+  
+  .main-text {
+    position: absolute;
+    z-index: 10;
+    color: #ffffff;
+    font-size: 24px;
+    top: 64px;
+    left: 22.5px;
+    line-height: 20px;
+    filter: drop-shadow(4px 0px 4px #000000);
+  }
+  
+  .second-text {
+    position: absolute;
+    z-index: 10;
+    color: #ffffff;
+    top: 129px;
+    left: 22.5px;
+    width: 295px;
+    filter: drop-shadow(4px 0px 4px #000000);
+  }
+  
+  .register {
+    position: absolute;
+    top: 237.02px;
+    left: 22.5px;
+    z-index: 10;
+  }
