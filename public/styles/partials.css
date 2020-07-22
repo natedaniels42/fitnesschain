@@ -1,9 +1,9 @@
 
-
+/*nave item*/
 .nav-item,
-.nav-link {
-	color: black !important;
-	font-size: 18px ! important;
+.nav-link,
+.navbar-brand {
+	color: #5A5A66 !important;
 
 }
 
@@ -12,10 +12,18 @@
 .navbar-light {
 	float: right ! important;
 	background-color: #FEF51B;
+	font-size: 20px ! important;
+	
+}
+
+.navbar,
+.navbar-dark {
+	font-family: 'Squada One', cursive;
+	color: black ! important !important;
+	font-weight: bold;
+	font-size: 18px ! important;
 }
 
 
-
-/*style="background-color: #FEF51B; float: right;*/
 
 
