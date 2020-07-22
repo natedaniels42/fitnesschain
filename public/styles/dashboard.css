@@ -19,12 +19,14 @@ h2 {
 table {
   margin: 0;
   width: 1038px;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 tr {
   height: 56px;
 }
-.tableHead {
-  margin-bottom: 23px;
+.tableHead tr {
+  height: 60px;
 }
 th,
 td {
@@ -36,17 +38,39 @@ td {
 th {
   font-weight: bold;
 }
-.firstDash {
-  /*padding-left: 13px */
+.firstDash,
+.firstData {
   width: 225px;
 }
-.lastDash {
+.lastDash,
+.lastData {
   width: 225px;
-  /* width: 243px; */
 }
-.emailDash {
+.emailDash,
+.emailData {
   width: 370px;
 }
-.sinceDash {
+.sinceDash,
+.sinceData {
   width: 179px;
+}
+
+.userData {
+  height: 300px;
+  overflow: scroll;
+}
+
+tbody,
+thead,
+tr {
+  display: block;
+}
+
+tbody {
+  height: 280px;
+  width: 100%;
+  overflow: auto;
+}
+tr {
+  width: 100%;
 }
