@@ -1,0 +1,35 @@
+footer {
+  background: #5A5A66;
+  width: 100%;
+  height:72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+}
+.leftFooter {
+  display: flex;
+  align-items: center;
+  margin-left: 144px;
+  height: 72px;
+}
+.leftFooter img {
+  height: 24px;
+}
+.leftFooter p,
+.leftFooter a {
+  margin: 0;
+  color: white;
+  margin-right: 36px;
+  font-size: 16px;
+  line-height: 15px;
+}
+.rightFooter {
+  margin-right: 142px;
+}
+.rightFooter img {
+  height: 50px;
+  margin-left: 22px
+}
