@@ -1,0 +1,21 @@
+
+
+.nav-item,
+.nav-link {
+	color: black !important;
+	font-size: 18px ! important;
+
+}
+
+ 
+.navbar-expand-lg, 
+.navbar-light {
+	float: right ! important;
+	background-color: #FEF51B;
+}
+
+
+
+/*style="background-color: #FEF51B; float: right;*/
+
+
