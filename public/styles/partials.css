@@ -1,17 +1,21 @@
-header {
-	align-items: center;
-}
-nav {
-	align-self: : center;
-}
-.navbar .navbar-expand-lg .navbar .navbar-light {
-	float: right;
-	margin-right: 98px;
+
+
+.nav-item,
+.nav-link {
+	color: black !important;
+	font-size: 18px ! important;
+
 }
 
-#navbarNav {
-	color: black;
+ 
+.navbar-expand-lg, 
+.navbar-light {
+	float: right ! important;
+	background-color: #FEF51B;
 }
-.nav-link {
-	color: #fff;
-}
+
+
+
+/*style="background-color: #FEF51B; float: right;*/
+
+
