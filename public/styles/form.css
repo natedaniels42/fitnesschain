@@ -4,6 +4,7 @@
   font-family: 'Roboto', sans-serif;
 }
 main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +34,8 @@ input {
   height: 57px;
   font-size: 24px;
   font-weight: normal;
+  border: 1px solid #5a5a66;
+  padding: 3px;
 }
 input::placeholder {
   color: lightgray;
@@ -63,4 +66,34 @@ input::placeholder {
     line-height: 117%;
     color: #ffffff;
     margin: 0 98px;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    margin-bottom: 200px;
+  }
+  .formHead {
+    margin-top: 60px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstName,
+  .lastName {
+    display: block;
+  }
+  .firstName {
+    margin-right: 0;
+  }
+  .firstName input,
+  .lastName input,
+  .email input {
+    height: 45px;
+    width: 269px;
+  }
+  .button {
+    width: 163px;
+  }
 }
