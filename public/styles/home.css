@@ -12,7 +12,9 @@
 
 .carousel-box {
     min-height: 355px;
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
   
   .carousel-item img{
