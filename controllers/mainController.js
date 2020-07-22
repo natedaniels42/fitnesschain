@@ -5,7 +5,7 @@ const db = require('../models')
 // New User Route
 router.get('/form', (req, res) => {
   res.render('form');
-})
+});
 
 // Create User Route
 router.post('/confirmation', (req, res) => {
