@@ -19,9 +19,11 @@ router.post('/confirmation', (req, res) => {
 })
 
 //to be deleted
-// router.get('/confirmation', (req, res) => {
-//   res.render('confirmation')
-// })
+router.get('/confirmation', (req, res) => {
+  res.render('confirmation', {
+    user: {firstName: 'Abdel'}
+  })
+})
 
 router.get('/dashboard', (req, res) => {
     db.User.find({}, (err, allUsers) => {

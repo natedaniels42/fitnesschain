@@ -8,6 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .welcome {
@@ -16,4 +17,8 @@ main {
 }
 .community {
   font-size: 36px;
+}
+.welcomeImg {
+  max-width: 448px;
+  max-height: 315px; 
 }
