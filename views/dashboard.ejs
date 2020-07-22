@@ -7,24 +7,28 @@
         <main>
             <h2>Business Dashboard</h2>
             <table>
-                <tr class="tableHead">
-                    <th class="firstDash">First name</th>
-                    <th class="lastDash">Last name</th>
-                    <th class="emailDash">Email</th>
-                    <th class="sinceDash">Member since</th>
-                </tr>
-                <% users.forEach((user, index) => { %>
-                    <% if (index % 2 === 0) { %>
-                        <tr style='background: #C4C4C4;'>
-                    <% } else { %>
-                        <tr style='background: #E2E2E2'>
-                    <% } %>
-                        <td><%= user.firstName%></td>
-                        <td><%=user.lastName%></td>
-                        <td><%=user.email%></td>
-                        <td><%=user.createdAt.toLocaleDateString()%></td>            
+                <thead>
+                    <tr class="tableHead">
+                        <th class="firstDash">First name</th>
+                        <th class="lastDash">Last name</th>
+                        <th class="emailDash">Email</th>
+                        <th class="sinceDash">Member since</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <% users.forEach((user, index) => { %>
+                        <% if (index % 2 === 0) { %>
+                            <tr style='background: #C4C4C4;'>
+                        <% } else { %>
+                            <tr style='background: #E2E2E2'>
+                        <% } %>
+                            <td class="firstData"><%= user.firstName%></td>
+                            <td class="lastData"><%=user.lastName%></td>
+                            <td class="emailData"><%=user.email%></td>
+                            <td class="sinceData"><%=user.createdAt.toLocaleDateString()%></td>            
+                        </tr>
                     <% }) %>
+                </tbody>
                 </table>
     </main>
     </body>
