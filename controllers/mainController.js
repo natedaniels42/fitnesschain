@@ -16,6 +16,15 @@ router.post('/confirmation', (req, res) => {
   })
 })
 
+router.get('/dashboard', (req, res) => {
+    db.User.find({}, (err, allUsers) => {
+        if (err) console.log(err);
+
+        res.render('dashboard', {
+            users: allUsers
+        })
+    })
+})
 
 
 
