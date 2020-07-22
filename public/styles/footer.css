@@ -18,7 +18,16 @@ footer {
 .leftFooter img {
   height: 24px;
 }
-.leftFooter p,
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  border: 0;
+  border-top: 1px solid white;
+}
+.copyright,
 .leftFooter a {
   margin: 0;
   color: white;
@@ -26,8 +35,15 @@ footer {
   font-size: 16px;
   line-height: 15px;
 }
+.copyright p {
+  margin: 0;
+}
 .rightFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 10%;
+  height: 72px;
 }
 .rightFooter img {
   height: 50px;
@@ -43,9 +59,27 @@ footer {
   }
 }
 @media only screen and (max-width: 610px) {
+  footer {
+    flex-direction: column;
+    height: 230px;
+  }
   .leftFooter,
   .rightFooter {
     width: 100%;
     margin: 0;
+  }
+  .leftFooter {
+    flex-direction: column;
+  }
+  .copyright {
+    padding-top: 15px;
+  }
+  .copyright,
+  .leftFooter a {
+    margin: 0;
+    height: 72px;
+  }
+  hr {
+    width: 90%;
   }
 }
