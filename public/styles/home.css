@@ -33,9 +33,44 @@
     filter: drop-shadow(4px 0px 4px #000000);
   }
   
-  .register {
+  .register-box {
     position: absolute;
     top: 237.02px;
     left: 22.5px;
     z-index: 10;
+    width: 212px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #fff519;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
   }
+
+  .register {
+    color: #5a5a66;
+    font-size: 24px;
+  }
+
+  .button-box {
+    position: relative;  
+    height: 163px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 51px;
+  }
+
+  .button {
+      width: 293px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: #5a5a66;
+      /*font-weight: bold;*/
+      font-size: 24px;
+      line-height: 117%;
+      color: #ffffff;
+      margin: 0 98px;
+  }
+
+  
