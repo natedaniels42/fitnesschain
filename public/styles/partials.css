@@ -1,0 +1,17 @@
+header {
+	align-items: center;
+}
+nav {
+	align-self: : center;
+}
+.navbar .navbar-expand-lg .navbar .navbar-light {
+	float: right;
+	margin-right: 98px;
+}
+
+#navbarNav {
+	color: black;
+}
+.nav-link {
+	color: #fff;
+}
