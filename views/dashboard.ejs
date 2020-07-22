@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/_head', { title:'confirmation'}) %>
+
+    <body>
+        <% users.forEach(user => { %>
+            <p><%=user.firstName%> <%=user.lastName%></p>
+            <p><%=user.email%></p>
+            <p><%=user.createdAt.toLocaleDateString()%></p>            
+        <% }) %>
+    </body>
+</html>
