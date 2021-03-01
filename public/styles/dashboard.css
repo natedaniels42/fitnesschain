@@ -55,7 +55,7 @@ th {
 
 .userData {
   height: 300px;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 tbody,
